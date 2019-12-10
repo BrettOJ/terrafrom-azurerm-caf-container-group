@@ -9,7 +9,7 @@ variable "location" {
 variable "resource_group_name" {
   
 }
-variable "ipaddress" {
+variable "ip_address_type" {
   
 }
 variable "dns_name_label" {
