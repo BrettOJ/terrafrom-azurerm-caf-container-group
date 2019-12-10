@@ -24,6 +24,9 @@ variable "container" {
 variable "ports" {
   
 }
+variable "tags" {
+  
+}
 
 # Example of container configuration object
 # container = {
