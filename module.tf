@@ -3,7 +3,7 @@ resource "azurerm_container_group" "contgroup" {
   location            = var.location
   resource_group_name = var.resource_group_name
   ip_address_type     = var.ipaddress
-  dns_name_label      = var.dns_label
+  dns_name_label      = var.dns_name_label
   os_type             = var.os_type
   tags                = var.tags
 
