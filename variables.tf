@@ -12,7 +12,7 @@ variable "resource_group_name" {
 variable "ipaddress" {
   
 }
-variable "dns_label" {
+variable "dns_name_label" {
   
 }
 variable "os_type" {

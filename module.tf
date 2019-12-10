@@ -6,7 +6,7 @@ resource "azurerm_container_group" "contgroup" {
   dns_name_label      = var.dns_label
   os_type             = var.os_type
   tags                = var.tags
-  
+
   container {
     name   = lookup(var.container, "cont_name", null)
     image  = lookup(var.container, "cont_image", null)
