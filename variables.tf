@@ -18,22 +18,23 @@ variable "dns_label" {
 variable "os_type" {
   
 }
-variable "cont_name" {
+variable "container" {
   
 }
-variable "cont_image" {
-  
-}
-variable "cpu" {
-  
-}
-variable "memory" {
-  
-}
-variable "port" {
-  
-}
-variable "port_protocol" {
+variable "ports" {
   
 }
 
+# Example of container configuration object
+# container = {
+#       name             = "container_name"
+#       image            = "container_image"
+#       cpu              = "0.5"
+#       memory           = "1.5"
+# }
+
+# Example of container configuration object
+# ports = {
+#       name             = "port"
+#       image            = "protocol"
+# }

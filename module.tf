@@ -7,14 +7,14 @@ resource "azurerm_container_group" "contgroup" {
   os_type             = var.os_type
 
   container {
-    name   = var.cont_name
-    image  = var.cont_image
-    cpu    = var.cpu
-    memory = var.memory
+    name   = lookup(var.container, "cont_name", null)
+    image  = lookup(var.container, "cont_image", null)
+    cpu    = lookup(var.container, "cpu", null)
+    memory = lookup(var.container, "memory", null)
 
     ports {
-      port     = var.port
-      protocol = var.port_protocol
+      port     = lookup(var.ports, "port", null)
+      protocol = lookup(var.ports, "protocol", null)
     }
   }
 }
