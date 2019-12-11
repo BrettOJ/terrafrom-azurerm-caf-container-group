@@ -8,8 +8,8 @@ resource "azurerm_container_group" "contgroup" {
   tags                = var.tags
 
   container {
-    name   = lookup(var.container, "cont_name", null)
-    image  = lookup(var.container, "cont_image", null)
+    name   = lookup(var.container, "name", null)
+    image  = lookup(var.container, "image", null)
     cpu    = lookup(var.container, "cpu", null)
     memory = lookup(var.container, "memory", null)
 
