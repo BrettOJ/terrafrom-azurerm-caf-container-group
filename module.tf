@@ -18,4 +18,9 @@ resource "azurerm_container_group" "contgroup" {
       protocol = lookup(var.ports_config, "protocol", null)
     }
   }
+  image_registry_credential {
+      username = var.reg_username
+      password = var.reg_password
+      server   = var.reg_server
+  }
 }

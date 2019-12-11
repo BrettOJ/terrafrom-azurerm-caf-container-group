@@ -28,6 +28,17 @@ variable "tags" {
   
 }
 
+variable "reg_username" {
+
+}
+variable "reg_password" {
+  
+}
+variable "reg_server" {
+
+}
+
+  
 # Example of container configuration object
 # container = {
 #       name             = "container_name"
