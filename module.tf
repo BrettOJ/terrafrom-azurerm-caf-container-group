@@ -8,14 +8,14 @@ resource "azurerm_container_group" "contgroup" {
   tags                = var.tags
 
   container {
-    name   = lookup(var.container, "name", null)
-    image  = lookup(var.container, "image", null)
-    cpu    = lookup(var.container, "cpu", null)
-    memory = lookup(var.container, "memory", null)
+    name   = lookup(var.container_config, "name", null)
+    image  = lookup(var.container_config, "image", null)
+    cpu    = lookup(var.container_config, "cpu", null)
+    memory = lookup(var.container_config, "memory", null)
 
     ports {
-      port     = lookup(var.ports, "port", null)
-      protocol = lookup(var.ports, "protocol", null)
+      port     = lookup(var.ports_config, "port", null)
+      protocol = lookup(var.ports_config, "protocol", null)
     }
   }
 }
