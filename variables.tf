@@ -18,10 +18,10 @@ variable "dns_name_label" {
 variable "os_type" {
   
 }
-variable "container" {
+variable "container_config" {
   
 }
-variable "ports" {
+variable "ports_config" {
   
 }
 variable "tags" {
